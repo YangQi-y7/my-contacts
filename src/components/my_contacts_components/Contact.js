@@ -2,7 +2,7 @@ import { CloseButton, Card } from "react-bootstrap"
 
 const Contact = ({id, contact, onDelete}) =>{
     return(
-        <Card border='dark' className='m-4'>
+        <Card border='dark' className='m-3'>
             <Card.Header>{contact.name}</Card.Header>
             <Card.Body>
                 <Card.Img variant='top' src={contact.avatar_url} alt='Avatar'/>

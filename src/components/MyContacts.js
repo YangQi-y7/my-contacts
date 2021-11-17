@@ -3,6 +3,17 @@ import { useState } from "react";
 import Contacts from "./my_contacts_components/Contacts";
 import AddContact from "./my_contacts_components/AddContact";
 
+const leftStyle = {
+  minHeight: "100vh",
+  backgroundColor: '#DEBA9D',
+}
+const rightStyle = {
+  minHeight: "100vh",
+  backgroundColor: '#9E7777',
+}
+
+
+
 const MyContacts = () =>{
 
     const [contacts, setContacts] = useState([
@@ -44,10 +55,10 @@ const MyContacts = () =>{
     
     return(
         <Row>
-            <Col md={6}>
+            <Col md={6} style={leftStyle}>
                 <AddContact onAdd={addContact}/>
             </Col>
-            <Col md={6} style={{backgroundColor: '#9E7777'}}>
+            <Col md={6} style={rightStyle}>
                 {contacts.length > 0 ? <Contacts contacts={contacts} onDelete={deleteContact}/> : <h2>No contacts.</h2>}
             </Col>
         </Row>

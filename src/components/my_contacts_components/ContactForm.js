@@ -37,8 +37,9 @@ const ContactForm = ({onAdd}) => {
     return(
         // className="m-3"
 // {/* <Container className='position-fixed top-50 translate-middle-y'> */}
-<Row  className="p-3">
-<Col md={4}>
+<Row  className="p-2 justify-content-center">
+
+<Col lg={8} className="col-xxl-6">
   <Form onSubmit={onSubmit} className='border p-4 border-dark bg-light'>
     <Form.Group as={Row} className="mb-3">
       <Form.Label column sm={3}> Name </Form.Label>
@@ -70,7 +71,7 @@ const ContactForm = ({onAdd}) => {
   
     <Form.Group as={Row} className="mb-3">
       <Col sm={{ span: 6, offset: 0 }}>
-        <Button variant='warning' onClick={randomGenerate}>Radom Generate</Button>
+        <Button variant='warning' onClick={randomGenerate}>Random Generate</Button>
       </Col>
 
       <Col sm={{ span: 6, offset: 0 }}>
@@ -82,7 +83,7 @@ const ContactForm = ({onAdd}) => {
   </Form>
 </Col>
   
-<Col md={2} className=' p-2 '>
+<Col lg={4} className='col-xxl-3'>
     <Card border='dark'>
         <Card.Header>{name ? name : '*Preview*'}</Card.Header>
         <Card.Body>
@@ -92,7 +93,6 @@ const ContactForm = ({onAdd}) => {
         </Card.Body>
     </Card>
 </Col>
-
 </Row>
 
 // </Container>

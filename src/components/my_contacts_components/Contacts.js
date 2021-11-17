@@ -5,7 +5,7 @@ import { Row } from "react-bootstrap"
 const Contacts = ({contacts, onDelete}) => {
 
     return(
-        <Row lg={4} md={3} sm={2} className='border-left'>
+        <Row md={3} lg={4}  className='border-left justify-content-center'>
 
             {contacts.map((contact, index)=>(
                 <Contact id={index} contact={contact} onDelete={onDelete}/>

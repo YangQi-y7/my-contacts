@@ -3,7 +3,7 @@ import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <div style={{backgroundColor: '#DEBA9D'}}>
+    <div>
       <NavBar />
       <MyContacts />
     </div>
